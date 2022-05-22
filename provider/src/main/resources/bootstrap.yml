@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: cb498c09-8b99-49b3-94bd-497599aa9a8e
+        ext-config[0]:
+          group: provider
+          data-id: redis1.properties
+          refresh: true
+        ext-config[1]:
+          data-id: mysql.properties
+          refresh: true
